@@ -13,7 +13,7 @@ body {
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 0;
 }
 
 
@@ -362,7 +362,7 @@ ul li a:hover {
 
 .project-card {
 
-    background: #1e293b;
+    background:  rgba(30, 41, 59, 0.75);
 
     border-radius: 20px;
 
@@ -538,7 +538,7 @@ ul li a:hover {
     margin: auto;
     padding: 30px;
     border-radius: 20px;
-    background: transparent;
+    background: rgba(30, 41, 59, 0.7);
     border: 1px solid rgba(255,255,255,0.2);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
@@ -572,7 +572,7 @@ ul li a:hover {
     width: 260px;
     padding: 25px;
     border-radius: 15px;
-    background: transparent;
+    background: rgba(30, 41, 59, 0.7);
     border: 1px solid rgba(255,255,255,0.2);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
