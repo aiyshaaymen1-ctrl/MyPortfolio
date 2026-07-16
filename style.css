@@ -1,19 +1,103 @@
 body {
-    background: linear-gradient(
-        -45deg,
-        #0f2027,
-        #203a43,
-        #2c5364,
-        #6dd5ed
-    );
 
-    background-size: 400% 400%;
-    animation: gradientMove 12s ease infinite;
-
+    background: #0f172a;
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 0;
+
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    width: 400px;
+    height: 400px;
+
+    background: #38bdf8;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    top: 10%;
+    left: 10%;
+
+    animation: moveGlow 8s infinite alternate;
+
+    z-index: 0;
+
+}
+
+
+body::after {
+
+    content: "";
+
+    position: fixed;
+
+    width: 450px;
+    height: 450px;
+
+    background: #9333ea;
+
+    border-radius: 50%;
+
+    filter: blur(140px);
+
+    bottom: 10%;
+    right: 10%;
+
+    animation: moveGlow2 10s infinite alternate;
+
+    z-index: 0;
+
+}
+
+
+
+@keyframes moveGlow {
+
+    from {
+
+        transform: translate(0,0);
+
+    }
+
+
+    to {
+
+        transform: translate(250px,150px);
+
+    }
+
+}
+
+
+
+@keyframes moveGlow2 {
+
+    from {
+
+        transform: translate(0,0);
+
+    }
+
+
+    to {
+
+        transform: translate(-200px,-150px);
+
+    }
+
 }
 
 
@@ -214,7 +298,8 @@ ul li a:hover {
 
 .skill-card {
 
-    background: #1e293b;
+    background: rgba(30,41,59,0.7);
+    backdrop-filter: blur(10px);
 
     width: 250px;
 
@@ -277,21 +362,6 @@ ul li a:hover {
     flex-wrap: wrap;
 
     gap: 25px;
-
-}
-
-
-.skill-card {
-
-    background: #1e293b;
-
-    width: 250px;
-
-    padding: 25px;
-
-    border-radius: 15px;
-
-    transition: 0.3s;
 
 }
 
