@@ -8,7 +8,7 @@ body {
 
     overflow-x: hidden;
     position: relative;
-    z-index: 1;
+    isolation:isolate;
 
 }
 
@@ -31,9 +31,10 @@ body::before {
     top: 10%;
     left: 10%;
 
-    animation: moveGlow 8s infinite alternate;
+    animation: moveGlow 18s ease-in-out infinite alternate;
 
-    z-index: 0;
+    z-index: -1;
+    opacity: .6;
 
 }
 
@@ -56,9 +57,10 @@ body::after {
     bottom: 10%;
     right: 10%;
 
-    animation: moveGlow2 10s infinite alternate;
+    animation: moveGlow2 22s ease-in-out infinite alternate;
 
-    z-index: 0;
+    z-index: -1;
+    opacity: .6;
 
 }
 
