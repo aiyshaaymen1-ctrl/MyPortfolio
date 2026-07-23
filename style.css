@@ -1,11 +1,16 @@
-body {
-    background: #111827;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 0;
-}
+body{
+    background: linear-gradient(
+        180deg,
+        #111827 0%,
+        #0f172a 50%,
+        #111827 100%
+    );
 
+    color:white;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    margin-top:0;
+}
 
 body::before {
 
